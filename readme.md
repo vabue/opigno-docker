@@ -1,4 +1,4 @@
-# Basic Docker distribution Opigno 1.24
+# Basic Docker distribution Opigno 1.25
 
 Simpliest method to try is to use 
 

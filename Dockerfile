@@ -31,7 +31,7 @@ RUN wget http://ftp.drupal.org/files/projects/registry_rebuild-7.x-2.5.tar.gz &&
 
 WORKDIR /var/www/html
 
-ENV OPIGNO_VERSION 7.x-1.24
+ENV OPIGNO_VERSION 7.x-1.25
 
 RUN curl -fSL "https://ftp.drupal.org/files/projects/opigno_lms-${OPIGNO_VERSION}-core.tar.gz" -o drupal.tar.gz \
   && tar -xz --strip-components=1 -f drupal.tar.gz \
