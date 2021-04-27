@@ -8,7 +8,7 @@ RUN apt-get update && apt-get -y install git mysql-client vim-tiny wget httpie u
 # COPY ./keyboard /etc/default/keyboard
 
 # install the PHP extensions we need
-RUN apt-get install -y libpng12-dev libjpeg-dev libpq-dev zlib1g-dev \
+RUN apt-get install -y libpng-dev libjpeg-dev libpq-dev zlib1g-dev \
 #	&& apt-get install -y wkhtmltopdf openssl build-essential xorg libssl-dev \ # to install wkhtmltopdf we need to suppress menu to choose keyboard layout
 	&& rm -rf /var/lib/apt/lists/* \
 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
